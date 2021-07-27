@@ -1,0 +1,7 @@
+aiohttp
+aiohttp_remotes
+appdirs
+click
+doit
+hat-aio
+hat-json

@@ -1,0 +1,28 @@
+---
+"$schema": "http://json-schema.org/schema#"
+id: "restlog://main.yaml#"
+type: object
+required:
+    - log
+    - host
+    - port
+    - db_path
+    - max_results
+properties:
+    log:
+        "$ref": "hat://logging.yaml#"
+    host:
+        type: string
+        description: listening local address/name
+    port:
+        type: integer
+        description: listening local TCP port
+    db_path:
+        type: string
+        description: path to the backend SQLite database
+    max_results:
+        type: integer
+        description: |
+            maximum number of entries available as result of single query
+            request
+...

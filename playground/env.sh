@@ -1,0 +1,8 @@
+PYTHON=${PYTHON:-python3}
+PLAYGROUND_PATH=$(cd $(dirname -- "$0") && pwd)
+ROOT_PATH=$PLAYGROUND_PATH/..
+DATA_PATH=$PLAYGROUND_PATH/data
+
+export PYTHONPATH=$ROOT_PATH/src_py
+
+mkdir -p $DATA_PATH

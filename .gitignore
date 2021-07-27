@@ -1,0 +1,8 @@
+/.doit.db
+/build
+/node_modules
+/playground/data
+/src_py/restlog/json_schema_repo.json
+/src_py/restlog/ui
+/test_pytest/.coverage
+__pycache__

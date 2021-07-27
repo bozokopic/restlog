@@ -1,0 +1,99 @@
+---
+openapi: 3.1.0
+info:
+    title: restlog
+    version: 0.0.1
+paths:
+    '/entries':
+        get:
+            parameters:
+              - name: source
+                in: query
+              - name: type
+                in: query
+              - name: last_entry_id
+                in: query
+              - max_results:
+                in: query
+            responses:
+                "200":
+                    "$ref": "#/components/responses/entries"
+                default:
+                    description: error
+    '/entry/{entry_id}':
+        get:
+            parameters:
+              - name: entry_id
+                in: path
+                required: true
+            responses:
+                "200":
+                    "$ref": "#/components/responses/entry"
+                default:
+                    description: error
+    '/entry/{source}/{type}':
+        post:
+            parameters:
+              - name: source
+                in: path
+                required: true
+              - name: type
+                in: path
+                required: true
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            description: entry data
+            responses:
+                "200":
+                    "$ref": "#/components/responses/entry"
+                default:
+                    description: error
+components:
+    schemas:
+        entry:
+            type: object
+            required:
+                - entry_id
+                - timestamp
+                - address
+                - source
+                - type
+                - data
+            properties:
+                entry_id:
+                    type: integer
+                timestamp:
+                    type: number
+                address:
+                    type: string
+                source:
+                    type: string
+                type:
+                    type: string
+                data: {}
+    responses:
+        entries:
+            decription: list of entries
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        required:
+                            - entires
+                            - more
+                        properties:
+                            entires:
+                                type: array
+                                items:
+                                    "$ref": "#/components/schemas/entry"
+                            more:
+                                type: boolean
+        entry:
+            decription: single entry
+            content:
+                application/json:
+                    schema:
+                        "$ref": "#/components/schemas/entry"
+...
