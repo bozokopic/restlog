@@ -83,7 +83,7 @@ setup(
     description='JSON log-structured data storage with REST API',
     long_description=readme,
     long_description_content_type='text/x-rst',
-    url='https://github.com/bnozokopic/restlog',
+    url='https://github.com/bozokopic/restlog',
     license='GPLv3',
     classifiers=[
         'Programming Language :: Python :: 3',
