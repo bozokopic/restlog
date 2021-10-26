@@ -10,7 +10,7 @@ required:
     - max_results
 properties:
     log:
-        "$ref": "hat://logging.yaml#"
+        "$ref": "hat-json://logging.yaml#"
     host:
         type: string
         description: listening local address/name

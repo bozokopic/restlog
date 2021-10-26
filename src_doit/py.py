@@ -79,7 +79,7 @@ requirements = {requirements}
 
 setup(
     name='restlog',
-    version='0.0.1',
+    version='0.0.2',
     description='JSON log-structured data storage with REST API',
     long_description=readme,
     long_description_content_type='text/x-rst',

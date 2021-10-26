@@ -1,4 +1,4 @@
-import r from '@hat-core/renderer';
+import r from '@hat-open/renderer';
 
 
 const localTimezoneOffset = (new Date()).getTimezoneOffset() * 60;

@@ -48,18 +48,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@hat-core/renderer@0.4.1-dev20210707":
-  version "0.4.1-dev20210707"
-  resolved "https://registry.yarnpkg.com/@hat-core/renderer/-/renderer-0.4.1-dev20210707.tgz#452e012f79208ab8c1f1c46a7fcc692868f43d9c"
-  integrity sha512-d6SCD6PHpLoZ4xjFX5aFvcwsE97Huo+vZ9O30czGPx26ZXGxJ6skd0wtqe7pfbJXPn/4CDRcKlxHPD9sye7zlg==
+"@hat-open/renderer@>=0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@hat-open/renderer/-/renderer-0.5.6.tgz#be4d1e3308cd40dc0ed2f9dd481bdedbc73a14d7"
+  integrity sha512-cngrNHGyPLl3FwrysezzPs1RYdXBHuYiqLWiwjsCVNnIOSYC51kK1c93pUy3dYNKLHhg1WAYSGgpFlOyo9W6jA==
   dependencies:
-    "@hat-core/util" "~0.4.1-dev20210707"
+    "@hat-open/util" ">=0.5.4"
     snabbdom "*"
 
-"@hat-core/util@0.4.1-dev20210707", "@hat-core/util@~0.4.1-dev20210707":
-  version "0.4.1-dev20210707"
-  resolved "https://registry.yarnpkg.com/@hat-core/util/-/util-0.4.1-dev20210707.tgz#5e134d39855b9dff0dd171710da945a42e2c0197"
-  integrity sha512-WjqHvCS2B0n/fnBrBtRuz4OJiI5dGq5SxEbHlib0jllV8nwto3QJxFa2ssVIUP7DhNn4E0F6n8gQvwr9XAIS0w==
+"@hat-open/util@*", "@hat-open/util@>=0.5.4":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@hat-open/util/-/util-0.5.4.tgz#99ab03b4e338d04be69ec10ba99fd1fb4f0c8b2a"
+  integrity sha512-+IeOnGxCK2LwNXsuYgW3g2InppUGDIhsqvg0pyKUdjuWB2IE79K9ZmCCbV/HOVRLNAS0sb40p1eza+SxjB5X2Q==
 
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
